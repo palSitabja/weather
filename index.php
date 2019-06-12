@@ -108,11 +108,11 @@ if($_POST['city']){
     }
     #news{
       padding-top: 150px;
-      background-image: url("news1.jpg");
+      background-image: url("asset/news1.jpg");
     }
     #forecasthead{
       padding-top: 150px;
-      background-image: url("forecast3.jpg");
+      background-image: url("asset/forecast3.jpg");
     }
     #forecastfont{
       font-family: 'Acme', sans-serif;
@@ -230,7 +230,7 @@ if($_POST['city']){
   	        </button>
   	      </div>
   	      <div class="modal-body text-center">
-            <img class="mx-auto rounded-circle shadow-lg" style="width:80px;" src="dp.jpg" alt="Card image cap">
+            <img class="mx-auto rounded-circle shadow-lg" style="width:80px;" src="asset/dp.jpg" alt="Card image cap">
   	        <br></br><p class="shadow-lg">Created by: <b style="font-family: 'Satisfy', cursive; font-size: 20px;">Sitabja Pal</b>
   	        <h5>Contact:</h5><a href="sitabjapal03@gmail.com" target="_blank">sitabjapal03@gmail.com</a><br></br><a href="https://www.linkedin.com/in/sitabja-p-702019b5/" target="_blank">https://www.linkedin.com/in/sitabja-p-702019b5/</a><br></br>
   	        <h5>API used: </h5><a href="https://www.apixu.com/api.aspx" target="_blank">www.apixu.com/api</a><br></br>
@@ -297,13 +297,13 @@ echo '
 
   <div class="card-body">
     <img class="mx-auto" style="width:120px;" src='.$weather['forecast']['forecastday']['0']['day']['condition']['icon'].' alt="Card image cap">
-    <h1 style="font-size:200px;font-family:Concert One, cursive;text-shadow: 9px 9px 12px grey;" class="card-title shadow"><img class="mx-auto" style="width:80px;" src="fog.png" alt="Card image cap"></span>'.$weather['current']['temp_c'].'&deg<small>C</small></h1>
+    <h1 style="font-size:200px;font-family:Concert One, cursive;text-shadow: 9px 9px 12px grey;" class="card-title shadow"><img class="mx-auto" style="width:80px;" src="asset/fog.png" alt="Card image cap"></span>'.$weather['current']['temp_c'].'&deg<small>C</small></h1>
     <h4 id="info" class="card-text"><i class="material-icons">toys</i> '.$weather['current']['wind_kph'].' KM/h | '.$weather['current']['wind_degree'].'&deg | '. $weather['current']['wind_dir'].'</h4>
     <h4 id="info" >'.$weather_details.'</h4>
     <table class="table">
     <tbody>
     <tr>
-      <td colspan="3"><img class="mx-auto" style="width:80px;" src="place.png" alt="Card image cap"><h4 id="info">'.$coord.'</h4></td>
+      <td colspan="3"><img class="mx-auto" style="width:80px;" src="asset/place.png" alt="Card image cap"><h4 id="info">'.$coord.'</h4></td>
     </tr>
   </tbody>
 </table>
@@ -312,19 +312,19 @@ echo '
 <div class="card-deck text-center">
   <div class="card  shadow-lg">
     <div id="grad1" class="card-body">
-      <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="pressure.png" alt="Card image cap"></h5>
+      <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="asset/pressure.png" alt="Card image cap"></h5>
       <p id="info" class="card-text">'.$pressure.'</p>
     </div>
   </div>
   <div class="card  shadow-lg">
     <div id="grad1" class="card-body">
-      <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="temp.png" alt="Card image cap"></h5>
+      <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="asset/temp.png" alt="Card image cap"></h5>
       <p id="info" class="card-text">'.$cloud.'</p>
     </div>
   </div>
   <div class="card shadow-lg">
     <div id="grad1" class="card-body">
-      <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="sun.png" alt="Card image cap"></h5>
+      <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="asset/sun.png" alt="Card image cap"></h5>
       <p id="info" class="card-text"><br></br>'.$sun.'</p>
     </div>
   </div>
@@ -333,7 +333,7 @@ echo '
 
   <div class="shadow-lg card">
     <div id="grad1" class="card-body">
-    <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="humidity.png" alt="Card image cap"></h5>
+    <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="asset/humidity.png" alt="Card image cap"></h5>
     <div class="col-md-4">
     <div class=" progress-bar1" data-percent='.$weather['current']['humidity'].' data-duration="1000" data-color="#FFFFFF,#3498DB"></div>
   </div>
@@ -343,7 +343,7 @@ echo '
 
   <div class="shadow-lg card">
     <div id="grad1" class="card-body">
-    <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="cloud.png" alt="Card image cap"></h5>
+    <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="asset/cloud.png" alt="Card image cap"></h5>
     <div class="col-md-4">
     <div class=" progress-bar1" data-percent='.$weather['current']['cloud'].' data-duration="1000" data-color="#FFFFFF,#FDBA04"></div>
   </div>
@@ -352,7 +352,7 @@ echo '
   </div>
   <div class="shadow-lg card">
   <div id="grad1" class="card-body">
-  <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="UV.png" alt="Card image cap"></h5>
+  <h5 class="card-title"><img class="mx-auto" style="width:80px;" src="asset/UV.png" alt="Card image cap"></h5>
   <div class="col-md-4">
   <div class="progress-bar1" data-percent='.$weather['forecast']['forecastday']['0']['day']['uv'].' data-duration="1000" data-color="#FFFFFF,#ef3b0e"></div>
   </div>
@@ -477,17 +477,17 @@ echo '
         var date=new Date();
     var time = date.getHours();
     if (time>=5 && time<=7) {
-      $("#weather").css({"background-image":"url('morning.jpg')"});
+      $("#weather").css({"background-image":"url('asset/morning.jpg')"});
     }if (time>=8 && time<=11) {
-      $("#weather").css({"background-image":"url('front1.jpg')"});
+      $("#weather").css({"background-image":"url('asset/front1.jpg')"});
     }else if(time>=12 && time<=15) {
-      $("#weather").css({"background-image":"url('front2.jpg')"});
+      $("#weather").css({"background-image":"url('asset/front2.jpg')"});
     }else if(time>=16 && time<=20) {
-      $("#weather").css({"background-image":"url('front3.jpeg')"});
+      $("#weather").css({"background-image":"url('asset/front3.jpeg')"});
     }else if(time>=21 && time<=23) {
-      $("#weather").css({"background-image":"url('front4.jpeg')"});
+      $("#weather").css({"background-image":"url('asset/front4.jpeg')"});
     }else if(time>=24 || time<=4 || time>=1) {
-      $("#weather").css({"background-image":"url('night.jpg')"});
+      $("#weather").css({"background-image":"url('asset/night.jpg')"});
     }
     </script>
     <script src="jQuery-plugin-progressbar.js"></script>
